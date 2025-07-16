@@ -63,7 +63,6 @@ def fetch_drug_data(medicamento: str):
 with DAG(
     dag_id='fetch_drug_events',
     start_date=datetime(2025, 5, 20),
-    schedule_interval=None,
     default_args=default_args,
     catchup=False,
     tags=['openfda', 'drug'],

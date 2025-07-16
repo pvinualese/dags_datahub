@@ -137,7 +137,6 @@ def publish_with_aspect(file_path):
 with DAG(
     dag_id='publish_to_datahub',
     start_date=datetime(2025, 5, 20),
-    schedule_interval=None,
     default_args=default_args,
     catchup=False,
     tags=['datahub', 'openfda'],
